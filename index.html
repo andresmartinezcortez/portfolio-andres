@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Analista de Datos y BI</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 0; padding: 0; background-color: #f4f4f4; color: #333; line-height: 1.6; }
+        header { background-color: #007bff; color: white; text-align: center; padding: 50px 20px; }
+        .profile-img { width: 150px; height: 150px; border-radius: 50%; border: 5px solid white; margin-bottom: 20px; }
+        .download-btn { display: inline-block; margin-top: 20px; padding: 10px 20px; background-color: white; color: #007bff; text-decoration: none; border-radius: 5px; font-weight: bold; }
+        .download-btn:hover { background-color: #e9ecef; }
+        section { padding: 20px; max-width: 900px; margin: 0 auto; }
+        .skills { display: flex; flex-wrap: wrap; gap: 10px; }
+        .skill { background-color: #e9ecef; padding: 5px 10px; border-radius: 5px; }
+        .project { border: 1px solid #ddd; padding: 15px; margin: 10px 0; background-color: white; border-radius: 5px; }
+        .project h3 { margin-top: 0; }
+        .experience { list-style: none; padding: 0; }
+        .experience li { margin-bottom: 10px; }
+        footer { text-align: center; padding: 20px; background-color: #333; color: white; }
+        a { color: #007bff; text-decoration: none; }
+        a:hover { text-decoration: underline; }
+        /* Responsive */
+        @media (max-width: 600px) { header { padding: 30px 10px; } .profile-img { width: 120px; height: 120px; } section { padding: 10px; } .skills { justify-content: center; } }
+    </style>
+    <!-- Incluir Chart.js para el gráfico -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <header>
+        <img src="foto-perfil.jpg" alt="Foto de perfil" class="profile-img">
+        <h1>Tu Nombre Completo</h1>
+        <p>Analista de Datos y BI Analyst | Especialista en Visualización y Análisis</p>
+        <a href="cv.pdf" download class="download-btn">Descargar CV (PDF)</a>
+    </header>
+    
+    <section id="about">
+        <h2>Sobre Mí</h2>
+        <p>Soy un analista de datos apasionado con experiencia en transformar datos en insights accionables. Trabajo con herramientas como Python, SQL y Power BI para crear dashboards interactivos y reportes que impulsan decisiones estratégicas. Tengo [X] años de experiencia en [industria o sector, ej. retail, finanzas].</p>
+    </section>
+    
+    <section id="skills">
+        <h2>Habilidades Técnicas</h2>
+        <div class="skills">
+            <span class="skill">Python (Pandas, NumPy, Matplotlib)</span>
+            <span class="skill">SQL</span>
+            <span class="skill">Power BI</span>
+            <span class="skill">Tableau</span>
+            <span class="skill">Excel Avanzado</span>
+            <span class="skill">R</span>
+            <span class="skill">Machine Learning Básico</span>
+            <span class="skill">ETL (Extract, Transform, Load)</span>
+        </div>
+    </section>
+    
+    <section id="experience">
+        <h2>Experiencia Laboral</h2>
+        <ul class="experience">
+            <li><strong>Analista de Datos Senior</strong> - Empresa XYZ, [Ciudad], [Año-Actual] <br> Lideré proyectos de BI, reduciendo tiempos de reporte en 30% con dashboards en Power BI.</li>
+            <li><strong>Analista Junior</strong> - Empresa ABC, [Ciudad], [Año-Año] <br> Analicé datos de ventas usando SQL y Python, identificando oportunidades de ahorro de $X.</li>
+            <!-- Agrega más experiencias -->
+        </ul>
+    </section>
+    
+    <section id="projects">
+        <h2>Proyectos Destacados</h2>
+        <div class="project">
+            <h3>Análisis de Ventas en Retail</h3>
+            <p>Proyecto donde analicé datos de ventas para identificar tendencias estacionales y optimizar inventarios. Usé Python para limpieza de datos y Power BI para un dashboard interactivo.</p>
+            <p><a href="https://github.com/tuusuario/proyecto-ventas" target="_blank">Ver en GitHub</a> | <a href="https://tu-dashboard.powerbi.com" target="_blank">Ver Dashboard</a></p>
+        </div>
+        <div class="project">
+            <h3>Dashboard de KPIs Financieros</h3>
+            <p>Creé un dashboard en Tableau para monitorear KPIs financieros en tiempo real, integrando datos de múltiples fuentes con SQL.</p>
+            <p><a href="https://public.tableau.com/views/TuDashboard" target="_blank">Ver en Tableau Public</a></p>
+        </div>
+        <div class="project">
+            <h3>Predicción de Demanda con Machine Learning</h3>
+            <p>Modelo predictivo en R para estimar demanda de productos, reduciendo errores en pronósticos en un 20%.</p>
+            <p><a href="https://github.com/tuusuario/prediccion-demanda" target="_blank">Ver en GitHub</a></p>
+        </div>
+    </section>
+    
+    <section id="visualization">
+        <h2>Ejemplo de Visualización</h2>
+        <p>Aquí un gráfico simple de ventas mensuales (datos ficticios para demostrar habilidades).</p>
+        <canvas id="salesChart" width="400" height="200"></canvas>
+    </section>
+    
+    <section id="education">
+        <h2>Educación y Certificaciones</h2>
+        <ul>
+            <li><strong>Licenciatura en Estadística o Matemáticas</strong> - Universidad [Nombre], [Año]</li>
+            <li><strong>Certificación en Power BI</strong> - Microsoft, [Año]</li>
+            <li><strong>Certificación en SQL</strong> - [Plataforma, ej. Coursera], [Año]</li>
+        </ul>
+    </section>
+    
+    <section id="contact">
+        <h2>Contacto</h2>
+        <p>Email: tuemail@example.com</p>
+        <p>LinkedIn: <a href="https://linkedin.com/in/tuusuario" target="_blank">Tu Perfil</a></p>
+        <p>GitHub: <a href="https://github.com/tuusuario" target="_blank">Tu Repositorio</a></p>
+    </section>
+    
+    <footer>
+        <p>&copy; 2023 Tu Nombre. Todos los derechos reservados.</p>
+    </footer>
+    
+    <script>
+        // Gráfico simple con Chart.js
+        const ctx = document.getElementById('salesChart').getContext('2d');
+        new Chart(ctx, {
+            type: 'bar',
+            data: {
+                labels: ['Ene', 'Feb', 'Mar', 'Abr', 'May', 'Jun'],
+                datasets: [{
+                    label: 'Ventas Mensuales ($)',
+                    data: [12000, 15000, 18000, 14000, 20000, 17000],
+                    backgroundColor: 'rgba(0, 123, 255, 0.5)',
+                    borderColor: 'rgba(0, 123, 255, 1)',
+                    borderWidth: 1
+                }]
+            },
+            options: {
+                responsive: true,
+                scales: {
+                    y: { beginAtZero: true }
+                }
+            }
+        });
+    </script>
+</body>
+</html>
